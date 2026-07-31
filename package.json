@@ -1,0 +1,15 @@
+{
+  "name": "sidecar-meet",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A bot that joins your meetings, listens, and (eventually) talks back using your own notes.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run start:dev --workspace apps/api",
+    "build": "npm run build --workspace packages/bot-engine && npm run build --workspace apps/api",
+    "postinstall": "playwright install chromium"
+  }
+}
