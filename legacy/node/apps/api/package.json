@@ -1,0 +1,28 @@
+{
+  "name": "@sidecar-meet/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "REST API that drives the bot-engine worker: join/leave/status for meeting bots.",
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.28",
+    "@nestjs/core": "^11.1.28",
+    "@nestjs/platform-express": "^11.1.28",
+    "@sidecar-meet/bot-engine": "*",
+    "@sidecar-meet/listener": "*",
+    "dotenv": "^16.4.0",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.24",
+    "@nestjs/testing": "^11.1.28",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

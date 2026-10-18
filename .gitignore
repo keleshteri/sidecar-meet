@@ -3,3 +3,8 @@ dist/
 *.log
 .env
 .env.local
+.auth/
+/target/
+/models/
+/.tools/
+/apps/desktop/src-tauri/gen/
