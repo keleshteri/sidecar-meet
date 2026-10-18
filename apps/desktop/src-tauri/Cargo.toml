@@ -1,0 +1,15 @@
+[package]
+name = "sidecar-desktop"
+version = "0.2.0"
+edition = "2024"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+sidecar-core.workspace = true
+tauri = { version = "2", features = [] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]

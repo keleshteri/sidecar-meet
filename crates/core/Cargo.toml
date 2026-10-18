@@ -1,0 +1,17 @@
+[package]
+name = "sidecar-core"
+version = "0.2.0"
+edition = "2024"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+headless_chrome = "1.0.22"
+cpal = "0.15.3"
+whisper-rs = "0.16"
+url = "2"
+uuid = { version = "1", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+dotenvy = "0.15"
+hound = "3.5"

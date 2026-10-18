@@ -1,0 +1,22 @@
+{
+  "name": "@sidecar-meet/bot-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright-driven meeting bot: joins a meeting URL, mic/camera controlled via fake media flags.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node src/index.ts",
+    "login:google": "ts-node src/login.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^22.0.0"
+  }
+}

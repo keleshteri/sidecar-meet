@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sidecar Meet</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body>
+<main>
+  <header><a class="brand" href="#">◒ <span>sidecar<span class="muted"> / meet</span></span></a><span class="badge">LOCAL WORKSPACE</span></header>
+  <section class="intro"><span class="eyebrow">YOUR MEETING COMPANION</span><h1>Be present.<br><span class="muted">Keep the conversation.</span></h1><p>Open a meeting, join in Chrome, and follow the transcript here.</p></section>
+  <div class="layout">
+    <section class="panel controls"><h2>Start a session</h2><form id="join-form"><label for="meeting-url">Google Meet link</label><input id="meeting-url" type="url" placeholder="https://meet.google.com/abc-defg-hij" required><button id="join" type="submit">Open meeting <span>↗</span></button></form><p class="hint">Join manually in the Chrome window. Keep the camera and microphone off for listening only.</p><details><summary>Audio setup</summary><div id="devices" class="hint">Checking devices…</div><p class="hint">In Meet settings, choose <strong>CABLE Input</strong> as the speaker. The listener records <strong>CABLE Output</strong>.</p><button id="refresh-devices" class="secondary">Refresh devices</button></details><div class="divider"></div><span id="status" class="status">Ready for a meeting</span><button id="leave" class="secondary danger" disabled>Leave meeting</button><p id="error" role="alert"></p></section>
+    <section class="panel transcript"><div class="panel-heading"><h2>Live transcript</h2><button id="copy" class="text-button" disabled>Copy text</button></div><p id="listener" class="hint">Transcription starts when a session opens.</p><div id="transcript" aria-live="polite"><div class="empty"><span class="wave">▂ ▅ ▃ ▇ ▃ ▅ ▂</span><h3>Room for the conversation.</h3><p>Your transcript will appear here as people speak.</p></div></div><footer>Processed locally · English transcription · 8-second default windows</footer></section>
+  </div><p class="footnote">Sessions end automatically after 5 minutes. Transcripts stay available until you close the app.</p>
+</main>
+</body></html>
